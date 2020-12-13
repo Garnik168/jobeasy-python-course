@@ -3,5 +3,9 @@
 # !important you should save only number to result_temperature. Formula (32°F − 32) × 5/9 = 0°C
 
 # type your code here
-temperature_fahrenheit = None
-result_temperature = None
+temperature_fahrenheit = float(input("Enter your Temperature in Fahrenheit: "))
+result_temperature = (temperature_fahrenheit - 32) * 5 / 9
+print(result_temperature)
+# or easier
+result_temperature_f_string = (float(input("Enter your Temperature in Fahrenheit: ")) - 32) * 5 / 9
+print(f'Your temperature in Celsius is {result_temperature_f_string}\U000000B0')
