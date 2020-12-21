@@ -46,6 +46,7 @@ print(result_6)
 
 string_6 = 'Python is a programming language that lets you work quickly and integrate systems more effectively'
 result_7 = string_6[0:14:3]
+# result_7 = string_6[:14:3]
 print(result_7)
 
 
@@ -58,8 +59,22 @@ print(result_8)
 
 # Create a range of numbers from 0 to 10 (excluding 10) and save it to result_9 variable
 
-result_9 = list(range(10))
-print(result_9) # casted to the list
+result_9 = range(10)
+print(result_9[0])
+print(result_9[1])
+print(result_9[2])
+print(result_9[3])
+print(result_9[4])
+print(result_9[5])
+print(result_9[6])
+print(result_9[7])
+print(result_9[8])
+print(result_9[9])
+# Second Solution
+# result_9 = list(range(10))
+# print(result_9) # casted to the list
+
+# Third Solution
 # for numbers in range(10):
 #     result_9 = numbers
 #     print(result_9) # range trough for loop
