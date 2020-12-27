@@ -66,8 +66,11 @@ print(result_3)
 result_4 = 0
 
 # TODO: Here is your code
-for num in range(2, 100):
+for num in range(2, 101):
     if num % 2 == 0:
         result_4 += int(num)
 print(result_4)
-
+# Solution 2
+for num in range(2, 101, 2):
+    result_4 += int(num)
+print(result_4)
