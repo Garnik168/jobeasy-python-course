@@ -3,22 +3,25 @@
 # Difference
 # Write a function, which will calculate the difference of these two numbers
 
-def difference(num_1, num_2):
+def difference(num_1: float, num_2: float):
     return num_1 - num_2
 print(difference(25, 18))
 
 # Division
 # Write a function, which will divide these two numbers
 
-def division(num_1, num_2):
-    return num_1 / num_2
-print(division(10, 2))
+def division(num_1: float, num_2: float):
+    if num_2 == 0:
+        return f'Can\'t divide by zero'
+    else:
+        return num_1 / num_2
+print(division(10, 0))
 
 
 # Function gets random number. If this number is more than ten, return the difference between 100 and this number,
 # otherwise return this number multiplied by 10
 
-def function_1(number):
+def function_1(number: int):
     if number > 10:
         return 100 - number
     else:
@@ -29,8 +32,8 @@ print(function_1(25))
 # Your function temerature_convertor gets the temperature in Fahrenheit, convert it to Celsius and return.
 # Formula (32°F − 32) × 5/9 = 0°C
 
-def temerature_convertor(fahrenheit_degree):
-    return f' {(fahrenheit_degree - 32) * 5/9}°C \U0001F913'
+def temerature_convertor(fahrenheit_degree: int):
+    return f' {round((fahrenheit_degree - 32) * 5/9)}°C \U0001F913'
 print(temerature_convertor(32))
 print(temerature_convertor(75))
 print(temerature_convertor(20))
@@ -51,7 +54,9 @@ print(taxi_fare(10))
 print(taxi_fare(250))
 print(taxi_fare(5))
 
-
+def taxi_fare_two(distance: float):
+    return round(4.0 + ((distance * 1000) / 140) * 0.25, 2)
+print(taxi_fare_two(10))
 
 # examples of usage:
 # taxi_fare(10) #21.86
